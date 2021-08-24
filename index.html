@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link id="stylesheet" rel="stylesheet" href="styles1.css">
+  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/b/bf/Circle-icons-weather.svg">
+</head>
+
+<body>
+  <div class="container">
+    <div class="app-title">
+      <p>Weather</p>
+    </div>
+    <div class="notification"> </div>
+    <div class="weather-container">
+      <div class="weather-icon">
+        <img src="icons/unknown.png" alt="Not Found">
+      </div>
+      <div class="temperature-value">
+        <p>- °<span>C</span></p>
+      </div>
+      <div class="temperature-description">
+        <p> - </p>
+      </div>
+      <div class="location">
+        <p>-</p>
+      </div>
+    </div>
+    <div class="lower-title">
+      <p>Weather</p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+  <a href="#" onclick="myFunction()" class="button">Change Mode</a>
+  <script>
+    function myFunction() {
+      if (document.querySelector("#stylesheet").getAttribute("href") == "styles2.css") {
+        document.querySelector("#stylesheet").setAttribute("href", "styles1.css");
+      } else {
+        document.querySelector("#stylesheet").setAttribute("href", "styles2.css");
+      }
+    }
+  </script>
+</body>
+
+</html>
